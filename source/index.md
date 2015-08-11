@@ -28,23 +28,23 @@ This example API documentation page was created with [Slate](http://github.com/t
 
 > To authorize, use this code:
 
-```ruby
+~~~ruby
 require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
+~~~
 
-```python
+~~~python
 import kittn
 
 api = kittn.authorize('meowmeowmeow')
-```
+~~~
 
-```shell
+~~~shell
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here"
   -H "Authorization: meowmeowmeow"
-```
+~~~
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
@@ -62,28 +62,28 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 
 ## Get All Kittens
 
-```ruby
+~~~ruby
 require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
 api.kittens.get
-```
+~~~
 
-```python
+~~~python
 import kittn
 
 api = kittn.authorize('meowmeowmeow')
 api.kittens.get()
-```
+~~~
 
-```shell
+~~~shell
 curl "http://example.com/api/kittens"
   -H "Authorization: meowmeowmeow"
-```
+~~~
 
 > The above command returns JSON structured like this:
 
-```json
+~~~json
 [
   {
     "id": 1,
@@ -100,7 +100,7 @@ curl "http://example.com/api/kittens"
     "cuteness": 10
   }
 ]
-```
+~~~
 
 This endpoint retrieves all kittens.
 
@@ -121,28 +121,28 @@ Remember — a happy kitten is an authenticated kitten!
 
 ## Get a Specific Kitten
 
-```ruby
+~~~ruby
 require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
 api.kittens.get(2)
-```
+~~~
 
-```python
+~~~python
 import kittn
 
 api = kittn.authorize('meowmeowmeow')
 api.kittens.get(2)
-```
+~~~
 
-```shell
+~~~shell
 curl "http://example.com/api/kittens/2"
   -H "Authorization: meowmeowmeow"
-```
+~~~
 
 > The above command returns JSON structured like this:
 
-```json
+~~~json
 {
   "id": 2,
   "name": "Isis",
@@ -150,7 +150,7 @@ curl "http://example.com/api/kittens/2"
   "fluffiness": 5,
   "cuteness": 10
 }
-```
+~~~
 
 This endpoint retrieves a specific kitten.
 
