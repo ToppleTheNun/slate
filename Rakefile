@@ -1,3 +1,4 @@
+require 'middleman-gh-pages'
 require 'rake/clean'
 
 CLOBBER.include('build')
